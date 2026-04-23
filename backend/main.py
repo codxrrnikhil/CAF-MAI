@@ -1,0 +1,7 @@
+from fastapi import FastAPI
+
+from backend.api.train import router as train_router
+
+app = FastAPI()
+
+app.include_router(train_router)
